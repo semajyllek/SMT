@@ -1,7 +1,7 @@
 #! export PYTHONIOENCODING=UTF-8
 #!/usr/bin/env python
 # model1.py: Model 1 translation table estimation
-# Steven Bedrick <bedricks@ohsu.edu> and Kyle Gorman <gormanky@ohsu.edu>
+
 
 from collections import defaultdict
 import numpy as np
@@ -9,6 +9,7 @@ import numpy as np
 def bitext(source, target):
     """
     Run through the bitext files, yielding one sentence at a time
+    # Steven Bedrick <bedricks@ohsu.edu> and Kyle Gorman <gormanky@ohsu.edu>
     """
     for (s, t) in zip(source, target):
         yield (s.strip().split(), [None] + t.strip().split())
