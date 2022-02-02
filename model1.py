@@ -127,9 +127,6 @@ class Model1(object):
         return ts_dictionary 
 
 
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
 
 
 
